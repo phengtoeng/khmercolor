@@ -1,0 +1,144 @@
+import 'package:flutter/material.dart';
+import 'package:khmerautocolor/screen/car_screen/car_dashboard.dart';
+import 'package:khmerautocolor/color/color.dart';
+
+
+const textColor = Color(0xfffdfdfc);
+const indicatorColor = Color(0x98212121);
+
+
+class Code_8N6 extends StatefulWidget {
+  const Code_8N6({Key? key}) : super(key: key);
+
+  @override
+  State<Code_8N6> createState() => _Code_8N6State();
+}
+
+class _Code_8N6State extends State<Code_8N6>
+    with SingleTickerProviderStateMixin {
+  late TabController controller;
+  @override
+  void initState() {
+    super.initState();
+    controller = TabController(length: 2, vsync: this);
+  }
+
+  void dispos() {
+    controller.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: carColor3,
+      appBar: AppBar(leading: IconButton(
+        icon: Icon(Icons.arrow_back_ios),
+        onPressed: () => Navigator.of(context).pop(),
+        color: indicatorColor,
+      ),
+        toolbarHeight: 80,
+        backgroundColor: carColor3,
+        bottom: TabBar(
+          indicatorColor: indicatorColor,
+          indicatorWeight: 2.0,
+          controller: controller,
+          tabs: [
+            Tab(
+                child: Image.asset(
+              'lib/images/conceptpaint.png',
+              scale: 1,
+            )),
+            Tab(
+              child: Image.asset('lib/images/spray_can.png'),
+            ),
+          ],
+        ),
+        shadowColor: Colors.transparent,
+      ),
+      body: TabBarView(
+        controller: controller,
+        children: [
+          ListView(
+            children: [
+              const Center(
+                child: Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("លាយពណ៌តាមគីឡូក្រាម ឬលីត..",
+                  style: TextStyle(color: textColor1,
+                      fontSize: 20,fontWeight: FontWeight.normal),),
+                ),
+              ),
+              Container(
+                child: Table(
+                  border: TableBorder.all(),
+                  children: [
+                    buildRow(['កូដពណ៌', 'ចំនួន 200ml ', 'ចំនួន 300ml',], isHeader: true),
+                    buildRow(['E10', '43.2', '64.8',]),
+                    buildRow(['E74', '88.3(131.5)', '132.5(197.3)',]),
+                    buildRow(['E36', '20(151.5)', '30(227.3)',]),
+                    buildRow(['E72', '23(174.5)', '34.5(261.8)',]),
+                    buildRow(['E02', '11.4(185.9)', '17(278.8)',]),
+                    buildRow(['E34', '10.8(196.7)', '16.2(295)',]),
+                    buildRow(['E93', '2.9(199.6)', '4.4(299.4)',]),
+                  ],
+                ),
+              ),
+
+            ],
+          ),
+          ListView(
+            children: [
+              const Center(
+                child: Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text("លាយពណ៌ដាក់ក្នុងកំប៉ុងបាញ់..",
+                    style: TextStyle(color: textColor1,
+                        fontSize: 20,fontWeight: FontWeight.normal),),
+                ),
+              ),
+
+              Container(
+                margin: EdgeInsets.only(left: 5,right: 5),
+                child: Table(
+                  border: TableBorder.all(),
+                  children: [
+                    buildRow(['កូដពណ៌', 'ចំនួន 100ml '], isHeader: true),
+                    buildRow(['E19', '100', ], isHeader: false),
+                  ],
+                ),
+              ),
+
+
+            ],
+          ),
+
+        ],
+      ),
+    );
+  }
+
+  Widget makeDismissible({required Widget child}) => GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () => Navigator.of(context).pop(),
+        child: GestureDetector(
+          onTap: () {},
+          child: child,
+        ),
+      );
+}
+
+TableRow buildRow(List<String> cells, {bool isHeader = false}) => TableRow(
+      children: cells.map((cell) {
+        return Material(
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Center(
+              child: Text(
+                cell,
+                style: const TextStyle(fontSize: 12, color: Colors.black54),
+              ),
+            ),
+          ),
+        );
+      }).toList(),
+    );
