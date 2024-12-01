@@ -1,0 +1,16 @@
+[
+    {
+        "Mark" : "Toyota",
+        "Model" : "Camry",
+        "Year" : "2007-2015",
+        "imageUrl": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/chevrolet-camaro-red-track-1200x800-%281%29.jpg"
+    },
+
+    {
+        "Mark" : "Toyota",
+        "Model" : "Prius",
+        "Year" : "2007-2015",
+        "imageUrl": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/chevrolet-camaro-red-track-1200x800-%281%29.jpg"
+    }
+
+]
