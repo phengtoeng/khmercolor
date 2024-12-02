@@ -37,8 +37,8 @@ class _Highlander_2001_2007_Color_PickState
         children: [
           Container(
             alignment: AlignmentDirectional.topStart,
-            child: Row(
-              children: const [
+            child: const Row(
+              children: [
                 Padding(
                   padding: EdgeInsets.fromLTRB(15, 60, 0, 0),
                   child: Icon(Icons.arrow_back,size: 34,),

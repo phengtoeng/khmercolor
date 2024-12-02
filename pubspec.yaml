@@ -29,6 +29,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^0.13.5
+  csv: ^5.0.0  # Make sure to add this line
+  # http for google sheet integrate`.
+
+
 
 
 

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/040.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1G3.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/color_code_all.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/202.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/218.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4R3.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4S6.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8P8.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8R3.dart';
+
+import '../../../Color_Code/copy_color_code.dart';
 
 class landcruiser_1998_2007_Color_Pick extends StatefulWidget {
   const landcruiser_1998_2007_Color_Pick({Key? key}) : super(key: key);
@@ -223,7 +225,7 @@ class _landcruiser_1998_2007_Color_PickState
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const Code_1G3()));
+                                    builder: (context) => const CarColorCode(googlePageId: '1G3')));
                           },
                           child: Image.asset(
                             'lib/images/toyota/landcruiser/1G3.png',

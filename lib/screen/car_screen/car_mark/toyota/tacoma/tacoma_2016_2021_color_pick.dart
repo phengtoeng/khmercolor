@@ -5,7 +5,7 @@ import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Pain
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1C0.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1D6.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1G3.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/color_code_all.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/202.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3R3.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4R3.dart';
@@ -27,6 +27,8 @@ import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_200
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_silver.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_skyblue.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_white.dart';
+
+import '../../Color_Code/copy_color_code.dart';
 
 class Tacoma_2016_2021_Color_Pick extends StatefulWidget {
   const Tacoma_2016_2021_Color_Pick({Key? key}) : super(key: key);
@@ -163,7 +165,7 @@ class _Tacoma_2016_2021_Color_PickState
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                              const Code_1G3()));
+                                              const CarColorCode(googlePageId: '1G3')));
                                       //Navigator.of(context).pop;
                                     },
                                     child: Image.asset(

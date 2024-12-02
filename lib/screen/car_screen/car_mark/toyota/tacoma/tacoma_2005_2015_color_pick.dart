@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/040.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/070.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1G3.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/color_code_all.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/202.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3R3.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4R4.dart';
@@ -11,6 +11,8 @@ import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Pain
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/6T3.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8R3.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8S6.dart';
+
+import '../../Color_Code/copy_color_code.dart';
 
 class Tacoma_2005_2014_Color_Pick extends StatefulWidget {
   const Tacoma_2005_2014_Color_Pick({Key? key}) : super(key: key);
@@ -229,7 +231,7 @@ class _Tacoma_2005_2014_Color_PickState
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const Code_1G3()));
+                                    builder: (context) => const CarColorCode(googlePageId: '1G3')));
                             //Navigator.of(context).pop;
                           },
                           child: Image.asset(

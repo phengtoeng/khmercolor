@@ -73,7 +73,7 @@ class _TundraState extends State<Tundra> {
                   imageParth: Image.asset('lib/images/toyota/tundra/tundra_2022_solar_octane.png'),
                   height: 140,
                   width: 140,
-                  navigationTo: const Tundra_2014_2023_Color_Pick(),
+                  navigationTo: Tundra_2000_2013_Color_Pick(),
                   yearText: "ឆ្នាំ 2014-2023",
                 ),
               ) ,

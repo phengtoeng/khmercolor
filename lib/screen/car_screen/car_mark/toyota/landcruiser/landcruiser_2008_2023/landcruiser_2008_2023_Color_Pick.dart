@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/040.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1G3.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/color_code_all.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/202.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/218.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4R3.dart';
@@ -9,6 +9,8 @@ import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Pain
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8P8.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8R3.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2012_2017/camry_2012-2017_celestial_silver.dart';
+
+import '../../../Color_Code/copy_color_code.dart';
 
 
 
@@ -204,7 +206,7 @@ class _landcruiser_2008_2023_Color_PickState
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                        const Code_1G3()));
+                                        const CarColorCode(googlePageId: '1G3')));
                               },
                               child: Image.asset(
                                 'lib/images/toyota/landcruiser/landcruiser_2018_gray.png',

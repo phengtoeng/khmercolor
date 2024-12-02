@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/040.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1D6.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F9.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1G3.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/color_code_all.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/202.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3Q3.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3R3.dart';
@@ -11,6 +11,8 @@ import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Pain
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/6T8.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/6V4.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8S6.dart';
+
+import '../../Color_Code/copy_color_code.dart';
 
 
 class Tundra_2000_2013_Color_Pick extends StatefulWidget {
@@ -177,7 +179,7 @@ class _Tundra_2000_2013_Color_PickState
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const Code_1G3()));
+                                                  const CarColorCode(googlePageId: '1G3')));
                                     },
                                     child: Image.asset(
                                       'lib/images/toyota/color/1G3.png',

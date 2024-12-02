@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:khmerautocolor/all_reusable_card/ReusableText_ColorPick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/040.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1G3.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/color_code_all.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/202.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3Q3.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4S2.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8S2.dart';
+
+import '../../../Color_Code/copy_color_code.dart';
 
 class prius_color_05_09_color_pick extends StatefulWidget {
   const prius_color_05_09_color_pick({Key? key}) : super(key: key);
@@ -31,8 +33,8 @@ class _prius_color_05_09_color_pickState
 
           Container(
             alignment: AlignmentDirectional.topStart,
-            child: Row(
-              children: const [
+            child: const Row(
+              children: [
                 Padding(
                   padding: EdgeInsets.fromLTRB(15, 60, 0, 0),
                   child: Icon(
@@ -115,7 +117,7 @@ class _prius_color_05_09_color_pickState
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const Code_3Q3()));
+                                              const CarColorCode(googlePageId: '3Q3')));
 
                                       //Navigator.of(context).pop;
                                     },
@@ -123,7 +125,7 @@ class _prius_color_05_09_color_pickState
                                       'lib/images/toyota/prius/prius_2006_red.png',
                                     ),
                                   ),
-                                  ReusableText(text: 'ពណ៌ Salsa Red Pearl' , CodeText: "(3Q3)")
+                                  const ReusableText(text: 'ពណ៌ Salsa Red Pearl' , CodeText: "(3Q3)")
                                 ],
                               ),
                               Column(
@@ -134,13 +136,13 @@ class _prius_color_05_09_color_pickState
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const Code_1G3()));
+                                                  const CarColorCode(googlePageId: '1G3')));
                                     },
                                     child: Image.asset(
                                       'lib/images/toyota/prius/prius_2006_grey.png',
                                     ),
                                   ),
-                                  ReusableText(text: 'ពណ៌ ប្រផេះ' , CodeText: "(1G3)")
+                                  const ReusableText(text: 'ពណ៌ ប្រផេះ' , CodeText: "(1G3)")
                                 ],
                               ),
                               Column(
@@ -158,7 +160,7 @@ class _prius_color_05_09_color_pickState
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-                                  ReusableText(text: 'ពណ៌ ទឹកសមុទ្រ' , CodeText: "(8S2)")
+                                  const ReusableText(text: 'ពណ៌ ទឹកសមុទ្រ' , CodeText: "(8S2)")
                                 ],
                               ),
                               Column(
@@ -176,7 +178,7 @@ class _prius_color_05_09_color_pickState
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-                                  ReusableText(text: 'ពណ៌ ប្រាក់' , CodeText: "1F7")
+                                  const ReusableText(text: 'ពណ៌ ប្រាក់' , CodeText: "1F7")
                                 ],
                               ),
                               Column(
@@ -194,7 +196,7 @@ class _prius_color_05_09_color_pickState
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-                                  ReusableText(text: 'ពណ៌ ខ្មៅ' , CodeText: "202")
+                                  const ReusableText(text: 'ពណ៌ ខ្មៅ' , CodeText: "202")
                                 ],
                               ),
                               Column(
@@ -212,7 +214,7 @@ class _prius_color_05_09_color_pickState
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-                                  ReusableText(text: 'ពណ៌មាស ' , CodeText: "4S2")
+                                  const ReusableText(text: 'ពណ៌មាស ' , CodeText: "4S2")
                                 ],
                               ),
                               Column(
@@ -230,7 +232,7 @@ class _prius_color_05_09_color_pickState
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-                                  ReusableText(text: 'ពណ៌ ស' , CodeText: "040")
+                                  const ReusableText(text: 'ពណ៌ ស' , CodeText: "040")
                                 ],
                               ),
                               Container(
