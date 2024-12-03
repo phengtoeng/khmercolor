@@ -24,7 +24,7 @@ class _CarDashboardState extends State<CarDashboard> {
             title: Padding(
               padding: EdgeInsets.only(top: 30.0),
               child: Text('ថ្នាំឡានលេក១',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
-                color: Color(0xff1F1D36)
+                color: textColor2
               ),
                 textAlign: TextAlign.center,),
             ),

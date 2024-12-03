@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/Tundra/Tundra_2007_2013_color_pick.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/Tundra/Tundra_2014_2023_color_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007_2011_color_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/highlander/highlander_2001_2007_color_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/prius/prius_2010_2015_color/prius_2010_2015_color_pick.dart';
-import 'package:khmerautocolor/color/color.dart';
 import '../../refactoring/refactoring.dart';
 import 'car_mark/toyota/landcruiser/landcruiser_2008_2023/landcruiser_2008_2023_Color_Pick.dart';
 import 'car_mark/toyota/prius/prius_2005_2009_color/prius_2005_2009_color_pick.dart';
@@ -23,7 +22,7 @@ class _PopularCarPaintState extends State<PopularCarPaint> {
     return
       SliverToBoxAdapter(
         child: Container(
-          color: Colors.cyan,
+          color: Colors.transparent,
           width: 400,
           height: 300,
           child: GridView.count(crossAxisCount: 2,

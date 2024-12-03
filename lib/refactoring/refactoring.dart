@@ -3,6 +3,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color/color.dart';
 
 
 /// Popular Car Paint ///
@@ -24,7 +25,7 @@ class PopularCar1 extends StatelessWidget {
     return MaterialButton(
       elevation: 0.0,
       splashColor: Colors.pink,
-      color: Colors.transparent,
+      color: backgroundColor,
       child: imagePath,
       // child: imagePath,
       onPressed: () {

@@ -27,104 +27,157 @@ class _HomeState extends State<Home> {
             return Scaffold(
               body: Container(
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        begin: Alignment.topRight,
-                        end: Alignment.bottomLeft,
-                        stops: const [
-                          0.1,
-                          0.5,
-                          0.6,
-                          0.7,
-                        ],
-                        colors: [
-                          Colors.yellow.shade300,
-                          Colors.redAccent,
-                          Colors.indigo.shade300,
-                          Colors.teal.shade300,
-                        ]
-                    )
-                ),
-                child: Center(
-                  child: Column(
-                    children: [
-                      const SizedBox(height: 150,),
-                      const Text('ថ្នាំបាញ់',style:  TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 35.0,
-                      ),),
-                      // const Text('ថ្នាំបាញ់',style: TextStyle(fontSize: 35,
-                      // fontWeight: FontWeight.bold),),
-                      const Text('រថយន្តលេខ1',
-                        style:  TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 35.0,
-                        ),),
-                      const SizedBox(height: 80,),
-                      Center(
-                        child: SizedBox(
-                          width: 250,
-                          height: 80,
-                          child: Material(
-                            borderRadius: BorderRadius.circular(10.0),
-                            elevation: 3,
-                            color: Colors.white,
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => const CarDashboard(),),);},
-                              splashColor: Colors.blueAccent,
-                              child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children:[
-                                    const Text('ឡាន',style: TextStyle(
-                                      fontSize: 30.0,
-                                      color: Colors.pink,
-                                    ),),
-                                    const SizedBox(width: 30.0,),
-                                    Image.asset('lib/icons/car.png',height: 40,width: 60,fit: BoxFit.cover,
-                                    )]),
-                            ),),
-                        ),
-                      ),
-
-                      const SizedBox(height: 10,),
-
-                      Center(
-                        child: SizedBox(
-                          width: 250,
-                          height: 80,
-                          child: Material(
-                            borderRadius: BorderRadius.circular(10.0),
-                            elevation: 3,
-                            color: Colors.white,
-                            // child: InkWell(
-                            //   onTap: () {
-                            //     Navigator.push(
-                            //         context,
-                            //         MaterialPageRoute(
-                            //             builder: (context) => const MotoDashboard()));},
-                            //   splashColor: Colors.blueAccent,
-                              child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children:[
-                                    const Text('ម៉ូតូ..',style: TextStyle(
-                                      fontSize: 30.0,
-                                      color: Colors.pink,
-                                    ),),
-                                    const SizedBox(width: 30.0,),
-                                    Image.asset('lib/icons/motorbike.png',height: 40,width: 60,fit: BoxFit.cover,
-                                    )]),
-                            ),),
-                        ),
-                      // ),
-                      const SizedBox(height: 80,),
-
-                    ],//children
-
-
+                  gradient: LinearGradient(
+                    begin: Alignment.topRight,
+                    end: Alignment.bottomLeft,
+                    stops: const [
+                      0.1,
+                      0.4,
+                      0.7,
+                      1.0,
+                    ],
+                    colors: [
+                      Colors.blue.shade900,
+                      Colors.indigo.shade600,
+                      Colors.purple.shade400,
+                      Colors.blue.shade200,
+                    ],
                   ),
+                ),
+
+                // decoration: BoxDecoration(
+                //   gradient: LinearGradient(
+                //     begin: Alignment.bottomRight,
+                //     end: Alignment.topLeft,
+                //     stops: const [
+                //       0.0,
+                //       0.3,
+                //       0.7,
+                //       1.0,
+                //     ],
+                //     colors: [
+                //       Colors.grey.shade800,
+                //       Colors.grey.shade600,
+                //       Colors.grey.shade400,
+                //       Colors.white70,
+                //     ],
+                //   ),
+                // ),
+
+                child: Center(
+                  child: Stack(
+                    children: [
+                      Column(
+                        children: [
+                          const SizedBox(height: 250,),
+                          const Text(
+                            'ថ្នាំបាញ់រថយន្តលេខ1',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 25.0,
+                            ),
+                          ),
+                          const SizedBox(height: 40,),
+                          Center(
+                            child: SizedBox(
+                              width: 250,
+                              height: 80,
+                              child: Material(
+                                borderRadius: BorderRadius.circular(10.0),
+                                elevation: 3,
+                                color: Colors.white,
+                                child: InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => const CarDashboard(),
+                                      ),
+                                    );
+                                  },
+                                  splashColor: Colors.blueAccent,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      const Text(
+                                        'ឡាន',
+                                        style: TextStyle(
+                                          fontSize: 30.0,
+                                          color: Colors.pink,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 30.0,),
+                                      Image.asset(
+                                        'lib/icons/car.png',
+                                        height: 40,
+                                        width: 60,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 10,),
+                          Center(
+                            child: SizedBox(
+                              width: 250,
+                              height: 80,
+                              child: Material(
+                                borderRadius: BorderRadius.circular(10.0),
+                                elevation: 3,
+                                color: Colors.white,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      'ម៉ូតូ..',
+                                      style: TextStyle(
+                                        fontSize: 30.0,
+                                        color: Colors.pink,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 10.0,),
+                                    Image.asset(
+                                      'lib/icons/tuk_tuk.png',
+                                      height: 30,
+                                      width: 40,
+                                      fit: BoxFit.cover,
+                                    ),
+                                    SizedBox(width: 15,),
+                                    Image.asset(
+                                      'lib/icons/motorbike.png',
+                                      height: 30,
+                                      width: 40,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 80,),
+                        ],
+                      ),
+                      Positioned(
+                        bottom: 20,
+                        left: 0,
+                        right: 0,
+                        child: Center(
+                          child: Transform.scale(
+                            scale: 0.5, // 50% of the original size
+                            child: Image.asset(
+                              'lib/images/concept_paints_logo.png',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      )
+
+                    ],
+                  )
+
 
                 ),
               ),
