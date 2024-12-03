@@ -146,7 +146,7 @@ class _HomeState extends State<Home> {
                                       width: 40,
                                       fit: BoxFit.cover,
                                     ),
-                                    SizedBox(width: 15,),
+                                    const SizedBox(width: 15,),
                                     Image.asset(
                                       'lib/icons/motorbike.png',
                                       height: 30,
@@ -167,25 +167,24 @@ class _HomeState extends State<Home> {
                                 borderRadius: BorderRadius.circular(10.0),
                                 elevation: 3,
                                 color: Colors.white,
-                                child: Row(
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    const Text(
+                                    Text(
                                       'ស្វែងរកតាមលេខកូដពណ៌',
                                       style: TextStyle(
                                         fontSize: 15.0,
                                         color: Colors.black87,
                                       ),
                                     ),
-                                    // const SizedBox(width: 15.0,),
-
-                                    Image.asset(
-                                      'lib/icons/search.png',
-                                      height: 15,
-                                      width: 15,
-                                      fit: BoxFit.cover,
+                                    SizedBox(width: 8.0), // Optional spacing
+                                    Icon(
+                                      Icons.search, // Search icon from Flutter's Icon set
+                                      size: 25.0,   // Adjust size to match the text
+                                      color: Colors.black87, // Match color to text or customize
                                     ),
                                   ],
+
                                 ),
                               ),
                             ),
