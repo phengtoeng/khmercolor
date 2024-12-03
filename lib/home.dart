@@ -215,8 +215,8 @@ class _HomeState extends State<Home> {
                               mainAxisSize: MainAxisSize.min, // Keeps the row compact
                               children: [
                                 SizedBox(
-                                  width: 120,
-                                  height: 120,
+                                  width: 130,
+                                  height: 130,
                                   child: Image.asset(
                                     'lib/images/concept_paints_logo.png',
                                     fit: BoxFit.contain,

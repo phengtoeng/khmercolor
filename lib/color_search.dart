@@ -60,6 +60,9 @@ class _HomeState extends State<ColorSearch> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     child: TextField(
+                      keyboardType: TextInputType.text,
+                      showCursor: true,
+                      cursorColor: Colors.black,
                       controller: _googlePageIdController,
                       decoration: InputDecoration(
                         filled: true,
@@ -76,7 +79,7 @@ class _HomeState extends State<ColorSearch> {
                     onPressed: _searchGoogleSheetData,
                     child: Text('Search'),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.pink,
+                      backgroundColor: Colors.blue,
                       padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                       textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
@@ -138,7 +141,7 @@ class _HomeState extends State<ColorSearch> {
     } else {
       // Show error message if the Google Page ID is empty
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Please enter a Google Page ID")),
+        SnackBar(content: Text("សូមដាក់លេខកូដពណ៌")),
       );
     }
   }
