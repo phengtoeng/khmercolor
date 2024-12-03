@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/040.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1E7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/color_code_all.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/209.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3P1.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3R3.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4Q2.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4T8.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8U6.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/040.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/1F7.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/209.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/3R3.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/4Q2.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/4T8.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/8U6.dart';
 
-import '../../Color_Code/copy_color_code.dart';
+import '../../Color_Code/color_code_all.dart';
+
 
 class Corolla_2009_2013_Color_Pick extends StatefulWidget {
   const Corolla_2009_2013_Color_Pick({Key? key}) : super(key: key);

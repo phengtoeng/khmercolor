@@ -158,7 +158,39 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                           ),
-                          const SizedBox(height: 80,),
+                          const SizedBox(height: 10,),
+                          Center(
+                            child: SizedBox(
+                              width: 250,
+                              height: 80,
+                              child: Material(
+                                borderRadius: BorderRadius.circular(10.0),
+                                elevation: 3,
+                                color: Colors.white,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      'ស្វែងរកតាមលេខកូដពណ៌',
+                                      style: TextStyle(
+                                        fontSize: 15.0,
+                                        color: Colors.black87,
+                                      ),
+                                    ),
+                                    // const SizedBox(width: 15.0,),
+
+                                    Image.asset(
+                                      'lib/icons/search.png',
+                                      height: 15,
+                                      width: 15,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+
                         ],
                       ),
                       Positioned(

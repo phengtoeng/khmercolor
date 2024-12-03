@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/040.dart';
+
 import 'package:khmerautocolor/color/color.dart';
 
 class CodeModel2 extends StatelessWidget {

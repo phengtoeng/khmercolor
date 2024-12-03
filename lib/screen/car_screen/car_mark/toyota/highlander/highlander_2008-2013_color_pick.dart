@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/070.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/202.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3Q3.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3R0.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4T8.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/6T7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8V5.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_black.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_blue.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_gold_sand.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_gray.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_red.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_silver.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_skyblue.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_white.dart';
+
+
+import '../../Color_Code/Car_Paint_Code/040.dart';
+import '../../Color_Code/Car_Paint_Code/062.dart';
+import '../../Color_Code/Car_Paint_Code/070.dart';
+import '../../Color_Code/Car_Paint_Code/1C0.dart';
+import '../../Color_Code/Car_Paint_Code/1F7.dart';
+import '../../Color_Code/Car_Paint_Code/202.dart';
+import '../../Color_Code/Car_Paint_Code/3Q3.dart';
+import '../../Color_Code/Car_Paint_Code/3R0.dart';
+import '../../Color_Code/Car_Paint_Code/4R3.dart';
+import '../../Color_Code/Car_Paint_Code/4T8.dart';
+import '../../Color_Code/Car_Paint_Code/586.dart';
+import '../../Color_Code/Car_Paint_Code/6T7.dart';
+import '../../Color_Code/Car_Paint_Code/8N6.dart';
+import '../../Color_Code/Car_Paint_Code/8V5.dart';
 
 class Highlander_2008_2013_Color_Pick extends StatefulWidget {
   const Highlander_2008_2013_Color_Pick({Key? key}) : super(key: key);

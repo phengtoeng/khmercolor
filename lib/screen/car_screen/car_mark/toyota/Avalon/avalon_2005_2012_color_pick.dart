@@ -1,30 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/070.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1D6.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1F7.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/070.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/1H1.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/218.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/3T0.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Car_Paint_Code/5B2.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/color_code_all.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1H1.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/1J9.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/218.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3Q3.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3R0.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/3T0.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/4W4.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/5B2.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/6T7.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/6w4.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8S6.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8V5.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/Color_Code/Toyota_Paint_Code/8W6.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_black.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_blue.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_gold_sand.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_gray.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_red.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_silver.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_skyblue.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_2007-2011/camry_2007-2011_white.dart';
 
+
+import '../../Color_Code/Car_Paint_Code/1F7.dart';
+import '../../Color_Code/Car_Paint_Code/3R0.dart';
+import '../../Color_Code/Car_Paint_Code/6T7.dart';
+import '../../Color_Code/Car_Paint_Code/8W6.dart';
 import '../../Color_Code/copy_color_code.dart';
 class Avalon_2005_2012_Color_Pick extends StatefulWidget {
   const Avalon_2005_2012_Color_Pick({Key? key}) : super(key: key);
