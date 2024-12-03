@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color_search.dart';
 import 'package:khmerautocolor/screen/car_screen/car_dashboard.dart';
 import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/motocycle_screen/moto_dashboard.dart';
@@ -159,6 +160,8 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           const SizedBox(height: 10,),
+
+// search color by code
                           Center(
                             child: SizedBox(
                               width: 250,
@@ -167,28 +170,66 @@ class _HomeState extends State<Home> {
                                 borderRadius: BorderRadius.circular(10.0),
                                 elevation: 3,
                                 color: Colors.white,
-                                child: const Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'ស្វែងរកតាមលេខកូដពណ៌',
-                                      style: TextStyle(
-                                        fontSize: 15.0,
-                                        color: Colors.black87,
+                                child: InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => const ColorSearch(),
                                       ),
-                                    ),
-                                    SizedBox(width: 8.0), // Optional spacing
-                                    Icon(
-                                      Icons.search, // Search icon from Flutter's Icon set
-                                      size: 25.0,   // Adjust size to match the text
-                                      color: Colors.black87, // Match color to text or customize
-                                    ),
-                                  ],
-
+                                    );
+                                  },
+                                  splashColor: Colors.blueAccent,
+                                  child: const Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'ស្វែងរកតាមលេខកូដពណ៌',
+                                        style: TextStyle(
+                                          fontSize: 15.0,
+                                          color: Colors.black87,
+                                        ),
+                                      ),
+                                      SizedBox(width: 15.0,),
+                                      Icon(
+                                        Icons.search, // Search icon from Flutter's Icon set
+                                        size: 25.0,   // Adjust size to match the text
+                                        color: Colors.black87, // Match color to text or customize
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
                           ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         ],
                       ),

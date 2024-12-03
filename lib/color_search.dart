@@ -26,7 +26,6 @@ class ColorSearch extends StatefulWidget {
 }
 class _HomeState extends State<ColorSearch> {
   final TextEditingController _googlePageIdController = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,38 +34,34 @@ class _HomeState extends State<ColorSearch> {
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            stops: const [0.1, 0.4, 0.7, 1.0],
+            stops: const [0.0, 0.5, 1.0],
             colors: [
-              Colors.blue.shade900,
-              Colors.indigo.shade600,
-              Colors.purple.shade400,
-              Colors.blue.shade200,
+              Color(0xFF34C759), // Apple Green
+              Color(0xFFDDDCDA), // Soft warm orange
+              Color(0xFF979797), // Light golden yellow
             ],
           ),
         ),
-        child: Center(
-          child: Stack(
-            children: [
-              Column(
+        child: Stack(
+          children: [
+            Center(
+              child: Column(
                 children: [
                   const SizedBox(height: 250),
                   const Text(
-                    'ថ្នាំបាញ់រថយន្តលេខ1',
+                    'ស្វែងរកពណ៌របស់អ្នក',
                     style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.normal,
                       fontSize: 25.0,
-                      color: Colors.white,
+                      color: Colors.grey,
                     ),
                   ),
                   const SizedBox(height: 40),
-                  // Search Field and Button
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     child: TextField(
                       controller: _googlePageIdController,
                       decoration: InputDecoration(
-                        labelText: 'Enter Google Page ID',
-                        labelStyle: TextStyle(color: Colors.white),
                         filled: true,
                         fillColor: Colors.white.withOpacity(0.7),
                         border: OutlineInputBorder(
@@ -89,26 +84,38 @@ class _HomeState extends State<ColorSearch> {
                   const SizedBox(height: 40),
                 ],
               ),
-              Positioned(
-                bottom: 10,
-                left: 0,
-                right: 0,
-                child: Center(
-                  child: Transform.scale(
-                    scale: 0.4, // 50% of the original size
-                    child: Image.asset(
-                      'lib/images/concept_paints_logo.png',
-                      fit: BoxFit.cover,
-                    ),
+            ),
+            Positioned(
+              bottom: 10,
+              left: 0,
+              right: 0,
+              child: Center(
+                child: Transform.scale(
+                  scale: 0.4,
+                  child: Image.asset(
+                    'lib/images/concept_paints_logo.png',
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+            Positioned(
+              top: 40,
+              left: 16,
+              child: IconButton(
+                icon: Icon(Icons.arrow_back, color: Colors.white, size: 30),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
+
+
 
   void _searchGoogleSheetData() {
     final googlePageId = _googlePageIdController.text;
