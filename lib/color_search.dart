@@ -115,8 +115,6 @@ class _HomeState extends State<ColorSearch> {
     );
   }
 
-
-
   void _searchGoogleSheetData() {
     final googlePageId = _googlePageIdController.text;
     print("Entered Google Page ID: $googlePageId");  // Debugging print statement
@@ -124,7 +122,7 @@ class _HomeState extends State<ColorSearch> {
     if (googlePageId.isNotEmpty) {
       // Show Google Page ID in Snackbar
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Searching for Google Page ID: $googlePageId')),
+        SnackBar(content: Text('ដំណើរការស្វែងរកពណ៌: $googlePageId')),
       );
 
       print("Navigating to CarColorCode with googlePageId: $googlePageId"); // Debugging log

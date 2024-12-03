@@ -114,7 +114,7 @@ class _CarColorCodeState extends State<CarColorCode> with SingleTickerProviderSt
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
-            return Center(child: Text("Failed to load data"));
+            return Center(child: Text("លេខកូដពណ៌មិនទាន់មានទេ។"));
           } else {
             final data = snapshot.data!;
             return TabBarView(

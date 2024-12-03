@@ -202,51 +202,41 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                           ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         ],
                       ),
-                      Positioned(
-                        bottom: 10,
-                        left: 0,
-                        right: 0,
-                        child: Center(
-                          child: Transform.scale(
-                            scale: 0.4, // 50% of the original size
-                            child: Image.asset(
-                              'lib/images/concept_paints_logo.png',
-                              fit: BoxFit.cover,
+                      Stack(
+                        children: [
+                          Positioned(
+                            bottom: 5, // 20px from the bottom of the screen
+                            left: 0,
+                            right: 0,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center, // Centers the Row content horizontally
+                              mainAxisSize: MainAxisSize.min, // Keeps the row compact
+                              children: [
+                                SizedBox(
+                                  width: 120,
+                                  height: 120,
+                                  child: Image.asset(
+                                    'lib/images/concept_paints_logo.png',
+                                    fit: BoxFit.contain,
+                                  ),
+                                ),
+                                const SizedBox(width: 20), // Add some spacing between the images
+                                SizedBox(
+                                  width: 70,
+                                  height: 70,
+                                  child: Image.asset(
+                                    'lib/images/8K.png',
+                                    fit: BoxFit.contain,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                        ),
+                        ],
                       )
+
 
                     ],
                   )
