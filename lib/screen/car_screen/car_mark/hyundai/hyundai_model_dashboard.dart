@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/hyundai/hyundai_model.dart';
 
 class HyundaiModeldashboard extends StatefulWidget {
@@ -14,7 +15,7 @@ class _HyundaiModeldashboardState extends State<HyundaiModeldashboard> {
     return  Scaffold(
       body: CustomScrollView(slivers: [
         const SliverAppBar(
-          backgroundColor: Color(0xfffd5d5d),
+          backgroundColor: backgroundColor,
           toolbarHeight: 100,
           title: Padding(
             padding: EdgeInsets.only(top: 30.0),

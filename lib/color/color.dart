@@ -56,7 +56,7 @@ const carColor42 = Color(0xff061b1d);
 //primary
 
 const backgroundColor = Color(0x79EEFAFD); //Main-page
-const backgroundColor1 = Color(0xFFDADAFF);
+const backgroundColor1 = Color(0xFFB0B1B1);
 const backgroundColor2 = Color(0x6AFFFBFA);
 const backgroundColor3 = Color(0xFFEBE8EC);
 const backgroundColor4= Color(0xFFE7E5E7);
@@ -79,3 +79,8 @@ const tapBarHighlight = Color(0xfff1023b);
 
 // indicator color
 const indicatorColor1 = Color(0xff1a1a1a);
+// dragable roller sheet
+
+//Toyota
+const draggaballRollerSheet1 = Color(0xffffc0a1);
+const draggaballRollerSheet2 = Color(0xfffff2a1);

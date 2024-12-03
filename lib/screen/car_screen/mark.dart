@@ -7,6 +7,7 @@ import 'package:khmerautocolor/screen/car_screen/car_mark/mazda/mazda_model_dash
 import 'package:khmerautocolor/screen/car_screen/car_mark/mg/mg_model_dashboard.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/nissan/nissan_model_dashboard.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/ssangyong/ssangyong_model_dashboard.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/tesla/tesla_model_dashboard.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/toyota_model_dashboard.dart';
 import 'package:khmerautocolor/color/color.dart';
 import '../../refactoring/refactoring_carMark.dart';
@@ -52,8 +53,8 @@ class _MarkState extends State<Mark> {
               imagePath: Image.asset('lib/images/lexus.png', fit: BoxFit.cover),
             ),
             carMark(
-              carDashboard: ToyotaModelDashboard(),
-              imagePath: Image.asset('lib/images/red_flag.png', fit: BoxFit.cover),
+              carDashboard: TeslaModeldashboard(),
+              imagePath: Image.asset('lib/images/tesla.png', fit: BoxFit.cover),
             ),
             carMark(
               carDashboard: ToyotaModelDashboard(),
@@ -61,7 +62,7 @@ class _MarkState extends State<Mark> {
             ),
             carMark(
               carDashboard: SsangYongModeldashboard(),
-              imagePath: Image.asset('lib/images/SsangYong.png', fit: BoxFit.cover),
+              imagePath: Image.asset('lib/images/byd.png', fit: BoxFit.cover),
             ),
             carMark(
               carDashboard: ToyotaModelDashboard(),
@@ -82,6 +83,15 @@ class _MarkState extends State<Mark> {
             carMark(
               carDashboard: MgModeldashboard(),
               imagePath: Image.asset('lib/images/mg.png', fit: BoxFit.cover),
+
+            ),
+            carMark(
+              carDashboard: ToyotaModelDashboard(),
+              imagePath: Image.asset('lib/images/red_flag.png', fit: BoxFit.cover),
+            ),
+            carMark(
+              carDashboard: SsangYongModeldashboard(),
+              imagePath: Image.asset('lib/images/SsangYong.png', fit: BoxFit.cover),
             ),
           ],
         ),

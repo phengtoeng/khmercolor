@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/nissan/almera/almera_year_Pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/nissan/juke/juke_year_Pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/nissan/navara/navara_year_Pick.dart';
@@ -23,19 +24,7 @@ class _NissanModelState extends State<NissanModel> {
       child: Expanded(
         child: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                  stops: [
-                0.1,
-                0.1,
-                0.1,
-              ],
-                  colors: [
-                Color(0xffF7F7F7),
-                Color(0xffB5EAEA),
-                Color(0xffF4F9F9),
-              ])),
+             color: backgroundColor),
           // width: 300,
           height: 1500,
           child: GridView.count(

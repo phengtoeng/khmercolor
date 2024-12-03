@@ -75,6 +75,7 @@ class _HomeState extends State<Home> {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 25.0,
+                              color: Colors.white,
                             ),
                           ),
                           const SizedBox(height: 40,),
@@ -132,13 +133,13 @@ class _HomeState extends State<Home> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     const Text(
-                                      'ម៉ូតូ..',
+                                      'ម៉ូតូ',
                                       style: TextStyle(
                                         fontSize: 30.0,
                                         color: Colors.pink,
                                       ),
                                     ),
-                                    const SizedBox(width: 10.0,),
+                                    const SizedBox(width: 15.0,),
                                     Image.asset(
                                       'lib/icons/tuk_tuk.png',
                                       height: 30,
@@ -161,12 +162,12 @@ class _HomeState extends State<Home> {
                         ],
                       ),
                       Positioned(
-                        bottom: 20,
+                        bottom: 10,
                         left: 0,
                         right: 0,
                         child: Center(
                           child: Transform.scale(
-                            scale: 0.5, // 50% of the original size
+                            scale: 0.4, // 50% of the original size
                             child: Image.asset(
                               'lib/images/concept_paints_logo.png',
                               fit: BoxFit.cover,

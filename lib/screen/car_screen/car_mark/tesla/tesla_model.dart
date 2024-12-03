@@ -1,33 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/Avalon/avalon_year_pick.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/Rav4/Rav4_year_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/Tundra/Tundra_year_Pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_year_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/corolla/Corolla_year_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/highlander/highlander_year_pick.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/landcruiser/LandCruiser_year_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/prius/prius_year_Pick.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/tacoma/tacoma_year_pick.dart';
 
 const style = TextStyle(fontFamily: 'Teko', fontSize: 20);
 
-class ToyotaModel extends StatefulWidget {
+class TeslaModel extends StatefulWidget {
   // const ToyotaModel({Key? key}) : super(key: key);
   @override
-  State<ToyotaModel> createState() => _ToyotaModelState();
+  State<TeslaModel> createState() => _TeslaModelState();
 }
 
-class _ToyotaModelState extends State<ToyotaModel> {
+class _TeslaModelState extends State<TeslaModel> {
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Expanded(
         child: Container(
           decoration: const BoxDecoration(
-           color: backgroundColor
-          ),
-
+              color: backgroundColor),
           // width: 300,
           height: 1500,
           child: GridView.count(
@@ -35,56 +30,21 @@ class _ToyotaModelState extends State<ToyotaModel> {
             scrollDirection: Axis.vertical,
             children: const [
               ReusableCard(
-                text: "Prius",
+                text: "Model 3",
                 color: Colors.transparent,
                 carModel: Prius(),
               ),// Prius
               ReusableCard(
-                text: "Camry",
+                text: "Model Y",
                 color: Colors.blue,
                 carModel: Camry(),
               ),// Camry
             // Sienma
               ReusableCard(
-                text: "Corolla",
+                text: "Model S",
                 color: Colors.blue,
                 carModel: Corolla()
               ),// Corolla
-              ReusableCard(
-                text: "Avalon",
-                color: Colors.blue,
-                carModel: Avalon(),
-              ),// Avalon
-              ReusableCard(
-                text: "Tundra",
-                color: Colors.blue,
-                carModel: Tundra(),
-              ),// Tundra
-              ReusableCard(
-                text: "Highlander",
-                color: Colors.blue,
-                carModel: Highlander(),
-              ),// Highlander
-              ReusableCard(
-                text: "Rav4",
-                color: Colors.blue,
-                carModel: Rav4(),
-              ),// Rav4
-              ReusableCard(
-                text: "C-HR",
-                color: Colors.blue,
-                carModel: Camry(),
-              ),
-              ReusableCard(
-                text: "LandCruiser",
-                color: Colors.blue,
-                carModel: LandCruiser(),
-              ),
-              ReusableCard(
-                text: "Tacoma",
-                color: Colors.blue,
-                carModel: Tacoma(),
-              ), // C-HR
 
             ],
           ),

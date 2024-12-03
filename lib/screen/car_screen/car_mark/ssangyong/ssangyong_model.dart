@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/Avalon/avalon_year_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/Tundra/Tundra_year_Pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/camry/camry_year_pick.dart';
@@ -8,32 +9,20 @@ import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/prius/prius_yea
 
 const style = TextStyle(fontFamily: 'Teko', fontSize: 20);
 
-class SsangYongModel extends StatefulWidget {
+class SsangyongModel extends StatefulWidget {
   // const ToyotaModel({Key? key}) : super(key: key);
   @override
-  State<SsangYongModel> createState() => _SsangYongModelState();
+  State<SsangyongModel> createState() => _TeslaModelState();
 }
 
-class _SsangYongModelState extends State<SsangYongModel> {
+class _TeslaModelState extends State<SsangyongModel> {
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Expanded(
         child: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                  stops: [
-                0.1,
-                0.1,
-                0.1,
-              ],
-                  colors: [
-                Color(0xffF7F7F7),
-                Color(0xffB5EAEA),
-                Color(0xffF4F9F9),
-              ])),
+              color: backgroundColor),
           // width: 300,
           height: 1500,
           child: GridView.count(

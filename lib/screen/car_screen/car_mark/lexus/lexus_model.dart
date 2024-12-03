@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/lexus/es/es_year_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/lexus/ls/is_year_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/lexus/lx/lx_year_pick.dart';
@@ -22,19 +23,7 @@ class _LexusModelState extends State<LexusModel> {
       child: Expanded(
         child: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                  stops: [
-                0.1,
-                0.1,
-                0.1,
-              ],
-                  colors: [
-                Color(0xffF7F7F7),
-                Color(0xffB5EAEA),
-                Color(0xffF4F9F9),
-              ])),
+              color: backgroundColor),
           // width: 300,
           height: 1500,
           child: GridView.count(

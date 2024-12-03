@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/Ford/ford_model.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/lexus/lexus_model.dart';
 
@@ -15,7 +16,7 @@ class _LexusModelDashboardState extends State<LexusModelDashboard> {
     return  Scaffold(
       body: CustomScrollView(slivers: [
         const SliverAppBar(
-          backgroundColor: Color(0xfffd5d5d),
+          backgroundColor: backgroundColor,
           toolbarHeight: 100,
           title: Padding(
             padding: EdgeInsets.only(top: 30.0),

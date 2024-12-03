@@ -7,6 +7,8 @@ import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/corolla/corolla
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/corolla/corolla_2014_2023_color_pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/prius/prius_2005_2009_color/prius_2005_2009_color_pick.dart';
 
+import '../../../../../color/color.dart';
+
 class Corolla extends StatefulWidget {
   const Corolla({Key? key}) : super(key: key);
 
@@ -31,7 +33,7 @@ class _CorollaState extends State<Corolla> {
         builder: (BuildContext context, ScrollController scrollController) =>
             Container(
           decoration: const BoxDecoration(
-              color: Color(0xfffaad3e),
+              color: draggaballRollerSheet2,
               borderRadius: BorderRadius.vertical(
                 top: Radius.circular(20),
               )),

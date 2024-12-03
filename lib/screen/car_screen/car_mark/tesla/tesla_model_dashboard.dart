@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:khmerautocolor/color/color.dart';
-import 'package:khmerautocolor/screen/car_screen/car_mark/toyota/toyota_model.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/nissan/nissan_model.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/ssangyong/ssangyong_model.dart';
+import 'package:khmerautocolor/screen/car_screen/car_mark/tesla/tesla_model.dart';
 
-class ToyotaModelDashboard extends StatefulWidget {
-  const ToyotaModelDashboard({Key? key}) : super(key: key);
+class TeslaModeldashboard extends StatefulWidget {
+  const TeslaModeldashboard({Key? key}) : super(key: key);
 
   @override
-  State<ToyotaModelDashboard> createState() => _ToyotaModelDashboardState();
+  State<TeslaModeldashboard> createState() => _TeslaModeldashboardState();
 }
 
-class _ToyotaModelDashboardState extends State<ToyotaModelDashboard> {
+class _TeslaModeldashboardState extends State<TeslaModeldashboard> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -34,7 +36,7 @@ class _ToyotaModelDashboardState extends State<ToyotaModelDashboard> {
           //   child: Icon(Icons.arrow_back,),
           // ),
         ),
-        ToyotaModel(),
+        TeslaModel(),
       ]),
     );
   }

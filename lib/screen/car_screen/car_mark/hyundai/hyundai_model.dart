@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khmerautocolor/color/color.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/hyundai/country/country_year_Pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/hyundai/h100/h100_year_Pick.dart';
 import 'package:khmerautocolor/screen/car_screen/car_mark/hyundai/h350/h350_year_Pick.dart';
@@ -26,19 +27,7 @@ class _HyundaiModelState extends State<HyundaiModel> {
       child: Expanded(
         child: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                  stops: [
-                0.1,
-                0.1,
-                0.1,
-              ],
-                  colors: [
-                Color(0xffF7F7F7),
-                Color(0xffB5EAEA),
-                Color(0xffF4F9F9),
-              ])),
+             color: backgroundColor),
           // width: 300,
           height: 1500,
           child: GridView.count(
